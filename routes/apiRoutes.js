@@ -1,6 +1,6 @@
 //Dependencies
 let fs = require("fs");
-let uuidv1 = require("uuid/v1");
+let {v4:uuidv4} = require("uuid");
 
 //Route
 module.exports = function(app) {
@@ -24,7 +24,7 @@ module.exports = function(app) {
 
             savedNotes = JSON.parse(data);
 
-            newNote.id = uuidv1();
+            newNote.id = uuidv4();
             savedNotes.push(newNote);
 
             fs.writeFile(__dirname + '/../db/db.json', JSON.stringify(savedNotes), 'utf-8', err => {
