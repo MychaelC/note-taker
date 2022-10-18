@@ -10,7 +10,7 @@ module.exports = function(app) {
         fs.readFile(__dirname + "/../db/db.json", (err, data) => {
             if (err) throw err;
             let storedNotes = JSON.parse(data);
-            return res.JSON(storedNotes);
+            return res.json(storedNotes);
         })
     });
 
