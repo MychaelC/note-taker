@@ -19,8 +19,12 @@ npm install
 Start the server (back-end) with the following command
 npm run dev
 
-Or view live link here:
+Or view live link here: https://enigmatic-harbor-66176.herokuapp.com/
 
+# What It Looks Like
+
+![screenshot](./Screen%20Shot%202022-10-18%20at%207.17.28%20PM.png)
+![screenshot](./Screen%20Shot%202022-10-18%20at%207.18.48%20PM.png)
 
 # Technologies
 
